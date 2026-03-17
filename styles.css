@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* html and body fill the full viewport, no overflow */
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Montserrat Alternates', sans-serif;
+  background-color: #fef6fb;
+  color: #3a3054;
+  display: flex;
+}
+
+/* Form elements don't inherit font from body — add font-family here too */
+input,
+select,
+button,
+label {
+  /* font-family: */
+}
+
+
+/* ────────────────────────────
+   SIDEBAR
+   - give it a fixed width of 220px
+   - full height of the screen (100vh)
+   - pink background color
+   - pink border on the right side
+   - use flexbox, stacking children top to bottom
+   - add padding top and bottom
+   - prevent it from shrinking
+   - hide any overflow so it never scrolls
+──────────────────────────── */
+.sidebar {
+
+}
+
+/* Sidebar logo text
+   - font size around 1.4rem
+   - pink color
+   - add padding: top/sides/bottom
+*/
+.sidebar-logo {
+
+}
+
+/* The "Hub" part of the logo — give it a different darker pink color */
+.sidebar-logo span {
+
+}
+
+/* "MENU" label above the nav links
+   - small font, uppercase, spaced out letters
+   - muted purple/pink color
+   - padding left and bottom
+*/
+.sidebar-section {
+
+}
+
+/* Each nav link
+   - use flexbox to put icon and text side by side
+   - align them vertically centered
+   - gap between icon and text
+   - padding inside
+   - font size
+   - muted color
+   - no underline (text-decoration)
+   - transparent left border (3px solid transparent) — it shows on hover/active
+*/
+.nav-item {
+
+}
+
+/* Nav link hover state — brighter pink text, light pink background */
+.nav-item:hover {
+
+}
+
+/* Active nav link — pink text, pink background, pink left border */
+.nav-item.active {
+
+}
+
+/* The SVG icon inside each nav link — set width and height to 18px */
+.nav-icon {
+
+}
+
+/* User info at the bottom of the sidebar
+   - push it to the bottom with margin-top: auto
+   - padding
+   - pink top border
+   - flexbox, side by side, centered, with a gap
+*/
+.sidebar-footer {
+
+}
+
+/* The initials circle
+   - 36x36px
+   - fully round (border-radius: 50%)
+   - pink background
+   - flexbox to center the letters inside
+   - font size and color
+   - prevent it from shrinking
+*/
+.avatar {
+
+}
+
+/* Wrapper for name + semester — stack them top to bottom */
+.user-info {
+
+}
+
+/* User's name — slightly larger, darker color */
+.user-name {
+
+}
+
+/* Semester label — smaller, muted color */
+.user-role {
+
+}
+
+
+/* ────────────────────────────
+   MAIN
+   - take up all remaining width (flex: 1)
+   - full height (100vh)
+   - flexbox stacking top to bottom
+   - hide overflow so only the content area scrolls
+──────────────────────────── */
+.main {
+
+}
+
+
+/* ── TOPBAR ──
+   - flexbox, side by side, space between left and right
+   - padding
+   - same pink background as sidebar
+   - pink bottom border
+   - flex-shrink: 0 so it never gets squished
+*/
+.topbar {
+
+}
+
+/* Dashboard title text — font size and dark color */
+.topbar-title {
+
+}
+
+/* The "Spring 2026" pill badge
+   - light pink background, pink border, rounded pill shape
+   - small font, pink color
+   - flexbox to put the icon and text side by side
+   - gap between icon and text
+*/
+.semester-badge {
+
+}
+
+
+/* ── CONTENT AREA ──
+   - padding around the content
+   - flexbox stacking sections top to bottom
+   - gap between sections
+   - overflow-y: auto so this part can scroll if needed
+   - flex: 1 so it fills remaining height
+*/
+.content {
+
+}
+
+/* Section headings like "My Classes", "Upload Notes", "Recent Notes"
+   - font size around 1rem
+   - dark color
+   - margin below to separate from the content under it
+*/
+.section-title {
+
+}
+
+
+/* ────────────────────────────
+   CLASS CARD
+   - white background, purple/pink border, rounded corners
+   - padding inside
+   - flexbox stacking children top to bottom
+   - gap between children
+   - max width so it doesn't stretch too wide
+──────────────────────────── */
+.class-card {
+
+}
+
+/* Top row of the card: icon on the left, status badge on the right
+   - flexbox, side by side, space between, vertically centered
+*/
+.card-header {
+
+}
+
+/* The box around the laptop icon
+   - 44x44px square
+   - rounded corners (border-radius: 12px)
+   - pink background and pink border
+   - flexbox to center the SVG inside
+   - prevent shrinking
+*/
+.card-icon {
+
+}
+
+/* The "Edit" pill badge
+   - small font
+   - light purple background, purple text, purple border
+   - padding and rounded pill shape
+*/
+.card-status {
+
+}
+
+/* Class name — slightly larger, dark color */
+.card-title {
+
+}
+
+/* Course code below the class name — smaller, muted color, small top margin */
+.card-code {
+
+}
+
+/* Row of stats at the bottom of the card
+   - flexbox side by side with a gap
+   - padding on top
+   - pink top border to separate from card content above
+*/
+.card-stats {
+
+}
+
+/* Each individual stat — stack the number and label top to bottom */
+.stat {
+
+}
+
+/* The big number — larger font, pink color */
+.stat-value {
+
+}
+
+/* The label under the number — small font, muted color */
+.stat-label {
+
+}
+
+
+/* ────────────────────────────
+   UPLOAD FORM
+   - white background, pink border, rounded corners
+   - padding
+   - flexbox stacking children top to bottom
+   - gap between rows
+   - max width so it doesn't stretch too wide
+──────────────────────────── */
+.upload-form {
+
+}
+
+/* Row that holds the text input and the dropdown side by side
+   - flexbox, side by side
+   - gap between them
+   - align items to the bottom (align-items: flex-end)
+*/
+.form-row {
+
+}
+
+/* Each label + input group — stack top to bottom with a small gap
+   - flex: 1 so they share the available space equally
+*/
+.form-group {
+
+}
+
+/* The shorter dropdown group — give it a max-width of 160px */
+.form-group.short {
+
+}
+
+/* Label text above each input — small font, muted pink color */
+label {
+
+}
+
+/* Text input and select dropdown
+   - light pink background
+   - pink border, rounded corners
+   - dark text color
+   - padding inside
+   - font size
+   - no outline on focus (outline: none)
+*/
+input[type="text"],
+select {
+
+}
+
+/* When the input or select is focused/clicked — change border to a brighter pink */
+input[type="text"]:focus,
+select:focus {
+
+}
+
+/* Hide the default browser file input — we'll use a styled label instead */
+input[type="file"] {
+
+}
+
+/* The pretty file upload area (a <label> styled as a button)
+   - flexbox, icon + text + small text side by side
+   - gap between them
+   - light pink background, dashed pink border, rounded
+   - padding
+   - cursor: pointer so it looks clickable
+*/
+.file-label {
+
+}
+
+/* Hover state — brighter border, slightly darker background */
+.file-label:hover {
+
+}
+
+/* "Choose a file" text — pink color, slightly bold */
+.file-label-text {
+
+}
+
+/* "PDF, DOCX, PNG, JPG" hint text
+   - small font, muted color
+   - push it to the far right with margin-left: auto
+*/
+.file-label-sub {
+
+}
+
+/* Footer row inside the form — pushes the upload button to the right */
+.form-footer {
+
+}
+
+/* Upload button
+   - pink background, white text, no border
+   - rounded corners, padding
+   - font size, cursor: pointer
+*/
+.btn-primary {
+
+}
+
+/* Darken the button slightly on hover */
+.btn-primary:hover {
+
+}
+
+
+/* ────────────────────────────
+   NOTES LIST
+   - flexbox stacking note rows top to bottom
+   - gap between rows
+   - max width so it matches the form above
+──────────────────────────── */
+.notes-list {
+
+}
+
+/* Each note row
+   - white background, pink border, rounded corners
+   - padding
+   - flexbox: left side and right side spaced apart (justify-content: space-between)
+   - vertically centered
+   - gap
+*/
+.note-item {
+
+}
+
+/* Brighter pink border when hovering over a note row */
+.note-item:hover {
+
+}
+
+/* Left side of the row — icon + text info side by side */
+.note-left {
+
+}
+
+/* The small pink box holding the file icon
+   - 36x36px, rounded corners
+   - pink background and pink border
+   - flexbox to center the SVG inside
+   - prevent shrinking
+*/
+.note-file-icon {
+
+}
+
+/* Wrapper for note title + meta — stack top to bottom */
+.note-info {
+
+}
+
+/* Note title text — small font, dark color */
+.note-title {
+
+}
+
+/* Row with class name and date side by side */
+.note-meta {
+
+}
+
+/* Class name label — very small, purple color */
+.note-class {
+
+}
+
+/* Date label — very small, muted color */
+.note-date {
+
+}
+
+/* Action buttons on the right side of each note — side by side with a gap */
+.note-actions {
+
+}
+
+/* Each icon button (download / delete)
+   - pink background, pink border, rounded square
+   - 32x32px
+   - flexbox to center the icon inside
+   - cursor: pointer
+*/
+.icon-btn {
+
+}
+
+/* Hover state for all icon buttons — slightly darker pink */
+.icon-btn:hover {
+
+}
+
+/* Hover state specifically for the delete button — red tones */
+.icon-btn.delete:hover {
+
+}
+
+/* Make the SVG inside the delete button turn red on hover */
+.icon-btn.delete:hover svg {
+
+}

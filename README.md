@@ -14,7 +14,7 @@ Each day of the workshop has its own **branch** with its own activity, starter f
 |---|---|
 | `Day1` | Intro to Web Dev, VCS, and Git |
 | `Day2` | Frontend - HTML & CSS (Project Dashboard) |
-| `Day3` | Coming soon... |
+| `Day3` | JavaScript + DOM |
 
 To switch to a day's branch:
 ```bash

@@ -2,9 +2,9 @@
 
 Welcome to the official repository for the **Full Stack Web Development Workshop** for Sprinternship 2026! 🎉
 
-### Always fork this repository before making any changes. Do not modify the original repo unless you have been explicitly given permission.
-
 This is your one-stop hub for all workshop activities. Most of our work will live here on GitHub, so get comfortable, you'll be using this repo throughout the program.
+
+## Always fork this repository before making any changes. Do not modify the original repo unless you have been explicitly given permission.
 
 ---
 

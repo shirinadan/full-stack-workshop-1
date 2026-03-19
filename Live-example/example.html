@@ -1,0 +1,184 @@
+<!DOCTYPE html> <!-- Tells browser this is HTML5 -->
+<html lang="en"> <!-- Root element with language -->
+<head> <!-- Contains page metadata -->
+  <meta charset="UTF-8"> <!-- Character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile responsive -->
+  <title>HTML - WebDev2026</title> <!-- Title appears in browser tab -->
+  <link rel="stylesheet" href="example.css">
+</head>
+<body>
+
+  <!-- HEADINGS (h1 is most important, h6 is least important) -->
+  <h1>Heading 1 (h1)</h1> <!-- Main page title -->
+  <h2>Heading 2 (h2)</h2> <!-- Section title -->
+  <h3>Heading 3 (h3)</h3> <!-- Subsection title -->
+  <h4>Heading 4 (h4)</h4> <!-- Smaller subsection -->
+  <h5>Heading 5 (h5)</h5> <!-- Even smaller -->
+  <h6>Heading 6 (h6)</h6> <!-- Smallest heading -->
+
+  <!-- PARAGRAPHS -->
+  <p>This is a paragraph.</p> <!-- Basic paragraph -->
+  <p>This is another paragraph.</p> <!-- Another paragraph -->
+  
+  <p>HTML stands for HyperText Markup Language.<br> <!-- Line break -->
+     It is used to design web pages using a markup language.</p>
+
+  <hr> <!-- Horizontal rule (line) -->
+
+  <p>HTML is a combination of Hypertext and Markup language.<br> <!-- Multiple line breaks -->
+     Hypertext defines the link between web pages.<br>
+     A markup language is used to define the text document within the tag 
+     which defines the structure of web pages.</p>
+
+  <!-- LINKS -->
+  <p><a href="https://go.fiu.edu/web-dev-2026" target="_blank">Visit WebDev2026 Notion</a></p> <!-- Link opens in new tab -->
+
+  <!-- IMAGES -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/330px-HTML5_logo_and_wordmark.svg.png" 
+       alt="WebDev2026 logo" width="100" height="100"> <!-- Image with alt text -->
+
+  <!-- COMMENTS -->
+  <!-- This is a single-line comment -->
+  <!--
+  This is a multi-line comment
+  spanning multiple lines
+  -->
+
+  <!-- TEXT FORMATTING -->
+  <p>This is a <b>boldface</b> tag.</p>
+  <p>This is an <i>italic</i> tag.</p>
+  <p>This is a <strong>strongly emphasized</strong> tag.</p>
+  <p>This is an <em>emphasized</em> tag.</p>
+
+  <!-- UNORDERED LIST (bullets) -->
+   <ul>
+    <li>Hello welcome to WebDev</li>
+   </ul>
+  <ul> <!-- Unordered list with bullet points -->
+    <li>List item 1</li> <!-- Close each li with </li> -->
+    <li>List item 2</li>
+    <li>List item 3</li>
+  </ul>
+
+  <!-- ORDERED LIST (numbers) -->
+   <ol>
+    <li>Hello welcome to WebDev</li>
+   </ol>
+  <ol> <!-- Ordered list with numbers -->
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+  </ol>
+
+  <!-- NESTED LISTS (lists inside lists) -->
+  <ul> <!-- Outer unordered list -->
+    <li>List item 1
+      <ul> <!-- Nested unordered list -->
+        <li>Nested item 1</li>
+        <li>Nested item 2</li>
+      </ul>
+    <ol>
+      <li>
+        Hey there
+      </li>
+      <li>Checkin
+      </li>
+    </ol>
+    </li>
+    <li>List item 2
+      <ul>
+        <li>Nested item 1</li>
+        <li>Nested item 2</li>
+      </ul>
+    </li>
+    <li>List item 3
+      <ul>
+        <li>Nested item 1</li>
+        <li>Nested item 2</li>
+      </ul>
+    </li>
+  </ul>
+
+  <!-- ADDRESS TAG -->
+  <address> <!-- Contact info or author info -->
+    HTML Coding / WebDev2026 / student@webdev2026.com
+  </address>
+
+  <!-- ========================= -->
+  <!-- SEMANTIC HTML LAYOUT DEMO -->
+  <!-- ========================= -->
+
+  <header id="site-header"> <!-- Semantic header with id -->
+    <h1>WebDev2026 Sprinternship</h1> <!-- Header title -->
+    <nav> <!-- Main navigation -->
+      <ul> <!-- Navigation list -->
+        <li><a href="#classes">Classes</a></li> <!-- Link to classes section -->
+        <li><a href="#resources">Resources</a></li> <!-- Link to resources section -->
+        <li><a href="#contact">Contact</a></li> <!-- Link to contact section -->
+      </ul>
+    </nav>
+  </header>
+
+  <main> <!-- Main content of the page -->
+    <section id="classes"> <!-- Section talking about classes -->
+      <h2>Enrolled Classes</h2> <!-- Section heading (header for this section) -->
+      <div> <!-- Generic container for class list -->
+        <ol> <!-- List of classes -->
+          <li>Intro WebDev</li>
+          <li>Adv WebDev</li>
+          <li>Intro DS/AI</li>
+          <li>Adv DS/AI</li>
+        </ol>
+      </div>
+    </section>
+
+    <aside> <!-- Side information related to main content -->
+      <h6>Tip about Semantic HTML</h6>
+      <p>Hello <code>World</code></p>
+      <p>Use semantic tags like <code>header</code>, <code>nav</code>, <code>main</code>, 
+         <code>section</code>, <code>aside</code>, and <code>footer</code> so your page 
+         is easier to understand for both people and browsers.</p>
+    </aside>
+
+    <section id="resources"> <!-- Another section -->
+      <h2>Resources</h2>
+      <p>Check out these helpful links:</p>
+      <ul>
+        <li><a href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf" target="_blank">HTML CheatSheet</a></li>
+      </ul>
+    </section>
+
+    <section id="contact"> <!-- Section with a form -->
+      <h2>Contact Form</h2>
+      <form action="#" method="post"> <!-- Form for user input -->
+        <div> <!-- Row 1 -->
+          <label for="student-name">Name:</label> <!-- Label for input -->
+          <input type="text" id="student-name" name="student-name" placeholder="Enter your name"> <!-- Text input -->
+        </div>
+
+        <div> <!-- Row 2 -->
+          <label for="class-select">Class:</label> <!-- Label for select -->
+          <select id="class-select" name="class-select"> <!-- Dropdown -->
+            <option value="1">Intro WebDev</option>
+            <option value="2">Adv WebDev</option>
+            <option value="3">Intro DS/AI</option>
+            <option value="4">Adv DS/AI</option>
+          </select>
+        </div>
+
+        <div> <!-- Row 3 -->
+          <label for="question">Question:</label> <!-- Label for textarea -->
+          <textarea id="question" name="question" placeholder="Type your question here"></textarea> <!-- Multi-line input -->
+        </div>
+
+        <button type="submit">Send Message</button> <!-- Button to submit the form -->
+      </form>
+    </section>
+  </main>
+
+  <footer> <!-- Semantic footer -->
+    <p>&copy; 2026 WebDev2026 Sprinternship&trade;. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

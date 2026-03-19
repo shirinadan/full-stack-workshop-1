@@ -1,0 +1,378 @@
+/* =========================
+   Base styles
+   ========================= */
+
+/* Apply box-sizing to all elements so padding/border
+   don't change the total width/height calculations. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* [web:1][web:4] */
+}
+
+/* Styles for the <body> element in your HTML.
+   Affects all visible text and the page background. */
+body {
+  margin: 0; /* Remove default browser margin around the page */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; /* Base font [web:2][web:5] */
+  line-height: 1.5; /* Comfortable line spacing */
+  color: #222; /* Default text color */
+  background: radial-gradient(circle at top, #e3f2fd 0, #f5f5f7 45%, #eceff1 100%); /* Page background color/gradient */
+}
+
+/* Styles for all <a> links in the HTML (e.g., Notion link, cheat sheet link). */
+a {
+  color: #1565c0; /* Link text color */
+  text-decoration: none; /* Remove underline by default */
+}
+
+/* Hover/focus state for links: when user hovers or tabs to a link. */
+a:hover,
+a:focus {
+  text-decoration: underline; /* Show underline on interaction */
+}
+
+/* Styles for any <img> tag (your HTML5 logo image). */
+img {
+  max-width: 100%; /* Keep image from overflowing its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra bottom whitespace */
+}
+
+
+/* =========================
+   Headings & text
+   ========================= */
+
+/* Base styling for all headings <h1>–<h6> in your HTML. */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; /* Make headings bold */
+  margin-top: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Styling specifically for the FIRST <h1> ("Heading 1 (h1)") 
+   and also the <h1> inside <header>, but header overrides some parts later. */
+h1 {
+  color: #e53935; /* Red text */
+  background-color: #ffebee; /* Light red background */
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  border-bottom: 2px solid #c62828;
+  border-top: 2px solid #c62828;
+}
+
+/* Styles for all <h2> tags (e.g., “Heading 2”, “Enrolled Classes”, “Resources”, “Contact Form”). */
+h2 {
+  color: #1e88e5; /* Blue heading color */
+}
+
+/* Styles for <h3> in your heading demo section. */
+h3 {
+  color: #00897b; /* Teal heading color */
+}
+
+/* Styles for <h4> in your heading demo section. */
+h4 {
+  color: #8e24aa; /* Purple heading color */
+}
+
+/* Styles for <h5> in your heading demo section. */
+h5 {
+  color: #5d4037; /* Brown heading color */
+}
+
+/* Styles for <h6> (e.g., “Tip about Semantic HTML” in <aside>). */
+h6 {
+  color: #546e7a; /* Gray-blue color */
+  text-transform: uppercase; /* Make text uppercase */
+  letter-spacing: 0.06em; /* Add spacing between letters */
+}
+
+/* Styles for all <p> paragraphs across the page. */
+p {
+  margin-top: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Styles for the <hr> element between paragraphs. */
+hr {
+  border: none;
+  border-top: 1px solid #cfd8dc; /* Light gray line */
+  margin: 1.5rem 0;
+}
+
+
+/* =========================
+   Lists
+   ========================= */
+
+/* Applied to all <ul> and <ol> lists (unordered and ordered lists) in your HTML. */
+ul,
+ol {
+  margin: 0.5rem 0 0.75rem;
+  padding-left: 1.5rem; /* Indent bullets/numbers from the left */
+}
+
+/* Styling each <li> list item. */
+li {
+  margin: 0.2rem 0;
+}
+
+/* Additional spacing when lists are nested inside other list items. */
+li ul,
+li ol {
+  margin-top: 0.25rem;
+}
+
+
+/* =========================
+   Address block
+   ========================= */
+
+/* Styles the <address> tag that wraps:
+   "HTML Coding / WebDev2026 / [student@...]" */
+address {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  background-color: #e3f2fd; /* Light blue background */
+  border-left: 4px solid #1976d2; /* Blue left border accent */
+  border-radius: 4px;
+  font-style: normal; /* Cancel default italic style for address */
+}
+
+
+/* =========================
+   Logo image
+   ========================= */
+
+/* Targets the specific <img> with alt="WebDev2026 logo" */
+img[alt="WebDev2026 logo"] {
+  margin: 1rem 0;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12); /* Soft shadow around logo */
+}
+
+
+/* =========================
+   Semantic layout
+   ========================= */
+
+/* Styles the <header id="site-header"> at the bottom of your HTML. */
+header#site-header {
+  background: linear-gradient(135deg, #0d47a1, #1976d2); /* Blue gradient background */
+  color: #fff; /* Text color inside header */
+  padding: 1rem 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* More specific styling for the <h1> inside <header id="site-header">.
+   This overrides the general h1 styles above for this particular h1. */
+header#site-header h1 {
+  margin: 0 0 0.5rem;
+  background: none;  /* Remove background set on general h1 */
+  border: none;      /* Remove borders set on general h1 */
+  text-align: left;  /* Align header title to the left */
+  padding: 0;
+  color: #e3f2fd;    /* Slightly lighter text in header */
+}
+
+/* Styles the <ul> inside <nav> inside <header>. 
+   This is your main navigation menu. */
+header nav ul {
+  list-style: none;          /* Remove default bullets */
+  display: flex;             /* Lay out nav items horizontally [web:11][web:14] */
+  gap: 1rem;                 /* Space between nav items */
+  padding: 0;
+  margin: 0;
+}
+
+/* Styles the <a> links in the header navigation (Classes, Resources, Contact). */
+header nav a {
+  color: #bbdefb; /* Light blue text color */
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Hover/focus style specifically for header nav links. */
+header nav a:hover,
+header nav a:focus {
+  color: #ffffff; /* Make them fully white on hover/focus */
+  text-decoration: underline;
+}
+
+/* Layout for the <main> element that wraps sections and aside. */
+main {
+  max-width: 960px;  /* Limit content width in the center of the screen */
+  margin: 1.5rem auto 0; /* Center main horizontally with top margin */
+  padding: 0 1.5rem 2rem;
+  display: grid;     /* Use CSS Grid for a two-column layout */
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); /* Left and right columns */
+  gap: 1.5rem;       /* Space between columns */
+}
+
+/* Styles for all <section> elements inside main:
+   - #classes, #resources, #contact, plus the earlier example content. */
+section {
+  grid-column: 1 / 2; /* Place sections in the left column of the grid */
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #ffffff; /* White cards */
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Styles for the <aside> element (tip about Semantic HTML). */
+aside {
+  grid-column: 2 / 3;   /* Place aside in the right column of the grid */
+  align-self: flex-start;
+  padding: 1rem;
+  background-color: #fff8e1; /* Light yellow background */
+  border-radius: 8px;
+  border-left: 4px solid #ffb300; /* Yellow accent border */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Extra spacing/tweaks for these specific sections (#resources and #contact). */
+#resources,
+#contact {
+  margin-top: 0.75rem;
+}
+
+/* Styling the <code> elements inside your HTML (e.g., in the aside). */
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background-color: #eceff1;
+  padding: 0.1rem 0.25rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+
+/* =========================
+   Resources list
+   ========================= */
+
+/* Adjust bullet style for the <ul> inside <section id="resources">. */
+#resources ul {
+  list-style: square; /* Square bullets instead of default discs */
+}
+
+
+/* =========================
+   Form styling
+   ========================= */
+
+/* Styles the <form> in <section id="contact">. */
+form {
+  display: flex;
+  flex-direction: column; /* Stack form rows vertically */
+  gap: 1rem;              /* Space between rows */
+  max-width: 480px;       /* Limit form width */
+}
+
+/* Styles each <div> that wraps a label + input/select/textarea. */
+form div {
+  display: flex;
+  flex-direction: column; /* Label above the input */
+  gap: 0.25rem;
+}
+
+/* Styles all <label> elements in the form. */
+label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Styles for text <input>, <select>, and <textarea> elements in the form. */
+input[type="text"],
+select,
+textarea {
+  padding: 0.5rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid #b0bec5;
+  font: inherit; /* Use same font as body [web:2][web:7] */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.06); /* Slight inner shadow for depth [web:10] */
+}
+
+/* Extra rules for the <textarea> (question field). */
+textarea {
+  min-height: 120px;
+  resize: vertical; /* Allow user to resize vertically only */
+}
+
+/* Styles the <button type="submit"> in the contact form. */
+button[type="submit"] {
+  align-self: flex-start; /* Keep button aligned to left of form */
+  padding: 0.55rem 1.4rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #1976d2; /* Blue background */
+  color: #fff;               /* White text */
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.05s ease;
+}
+
+/* Hover/focus effects for submit button. */
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: #0d47a1; /* Darker blue on hover */
+  transform: translateY(-1px); /* Slight lift effect */
+}
+
+
+/* =========================
+   Footer
+   ========================= */
+
+/* Styles the <footer> element at the very bottom of your HTML. */
+footer {
+  margin-top: 2rem;
+  background-color: #111827; /* Dark background */
+  color: #e5e7eb;           /* Light text */
+  text-align: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+
+/* =========================
+   Responsive tweaks
+   ========================= */
+
+/* For screens 768px wide or smaller (tablets, small laptops). */
+@media (max-width: 768px) {
+  /* Make main content single-column instead of two columns. */
+  main {
+    grid-template-columns: 1fr;
+    padding: 0 1rem 2rem;
+  }
+
+  /* Place aside in the same column as sections (stacked). */
+  aside {
+    grid-column: 1 / 2;
+  }
+}
+
+/* For screens 480px wide or smaller (phones). */
+@media (max-width: 480px) {
+  /* Reduce header padding on small screens. */
+  header#site-header {
+    padding: 0.75rem 1rem;
+  }
+
+  /* Allow nav items to wrap onto multiple lines if needed. */
+  header nav ul {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  /* Slightly smaller padding on sections and aside for narrow screens. */
+  section,
+  aside {
+    padding: 0.75rem;
+  }
+}

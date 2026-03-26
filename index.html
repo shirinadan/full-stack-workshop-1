@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workshop 4 Activity</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+
+    <header class="app-header">
+      <h1 id="title">Team Dashboard</h1>
+      <p id="subtitle">Make a small feature update and submit it through a pull request.</p>
+      <div class="header-actions">
+        <button id="toggleThemeBtn">Toggle Theme</button>
+        <button id="changeTitleBtn">Change Title</button>
+      </div>
+    </header>
+
+    <!-- WELCOME PANEL -->
+    <section class="card" id="welcomeCard">
+      <h2>Welcome Panel</h2>
+      <input id="nameInput" type="text" placeholder="Enter your name" />
+      <div class="button-row">
+        <button id="greetBtn">Greet User</button>
+        <button id="clearBtn">Clear Output</button>
+      </div>
+      <p id="output">Output will appear here.</p>
+    </section>
+
+    <!-- CALCULATOR PANEL -->
+    <section class="card" id="calcCard">
+      <h2>Calculator</h2>
+      <div class="calc-row">
+        <input id="num1" type="number" placeholder="First number" />
+        <span class="calc-op" id="calcOp">+</span>
+        <input id="num2" type="number" placeholder="Second number" />
+      </div>
+      <div class="button-row">
+        <button id="addBtn">Add</button>
+        <button id="subtractBtn">Subtract</button>
+        <button id="multiplyBtn">Multiply</button>
+      </div>
+      <p id="calcResult">Result will appear here.</p>
+    </section>
+
+    <!-- QUICK ACTIONS -->
+    <section class="card">
+      <h2>Quick Actions</h2>
+      <div class="button-row">
+        <button id="uppercaseBtn">Uppercase</button>
+        <button id="reverseBtn">Reverse Text</button>
+        <button id="countBtn">Count Characters</button>
+        <button id="clearInputBtn">Clear Input</button>
+      </div>
+    </section>
+
+    <!-- COLOR PANEL -->
+    <section class="card" id="colorCard">
+      <h2>Color Controls</h2>
+      <div class="color-switches">
+        <button class="switch" id="switchRed" data-color="crimson">Red</button>
+        <button class="switch" id="switchBlue" data-color="#2563eb">Blue</button>
+        <button class="switch" id="switchGreen" data-color="#16a34a">Green</button>
+        <button class="switch" id="switchPurple" data-color="#7c3aed">Purple</button>
+        <button class="switch" id="switchOrange" data-color="#ea580c">Orange</button>
+      </div>
+      <p id="colorOutput">Click a color to change the title.</p>
+    </section>
+
+    <!-- STATUS PANEL -->
+    <section class="card">
+      <h2>Status Panel</h2>
+      <p id="statusText">Status: Waiting for update</p>
+      <div class="button-row">
+        <button id="statusBtn">Update Status</button>
+        <button id="resetBtn">Reset Status</button>
+      </div>
+      <div id="clickCounter" class="click-counter">Button clicks: 0</div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
